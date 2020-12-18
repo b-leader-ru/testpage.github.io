@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="certificate">
+    <div class="certificate__wrapper">
+      <img class="certificate__image" src="certificate-logo.png" alt="certificate-logo">
+      <h1 class="title">Continuing Education Certificate</h1>
+      <p class="sub__title">awarded to</p>
+      <div class="graduate">
+        <h3 class="graduate__title graduate__title--name">Firstname Lastname</h3>
+        <div class="graduate__subtitle">for your participation in</div> 
+        <h3 class="graduate__title graduate__title--program">“TITLE OF PROGRAM”</h3>
+      </div>
+      <p class="text">The Association for the Advancement of Medical Instrumentation (AAMI) has pre-approved <br>
+        <span class="hors">1</span> Hour of Continuing Education professional development credit</p>
+      <p class="institution">
+        International Consulting Associates, Inc <br>
+        Division for Devices and Health Practic
+      </p> 
+      <div class="footer">
+        <div class="date__wrapper">
+          <h3 class="date__title">DATE</h3>
+          <p class="date__text">Date</p>
+        </div>
+        <div class="director__wrapper">
+          <div class="director__text">
+            <p>
+            John Snow, Director, Training and Partnerships <br>
+            Division for Devices and Health Practice, ICA
+            </p>
+          </div>
+        </div>
+      </div> 
+      <div class="number">015-522156</div> 
+    </div>
+  </div>
+</body>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .certificate {
+    background-image: url('certificate-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1885px;
+    height: 1465px;
+    text-align: center;
+  }
+  .certificate__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 220px;
+  }
+  .certificate__image {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 63px;
+  }
+  .title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000;
+    margin: 0px;
+    margin-bottom: 4px;
+  }
+  .sub__title {
+    margin: 0px;
+    font-size: 33px;
+    font-weight: bold;
+    font-style: italic;
+    color: #175c96;
+  }
+  .graduate {
+    max-width: 690px;
+    width: 100%;
+    text-align: center;
+    margin-top: 56px;
+    margin-bottom: 44px;
+  }
+  .graduate__title {
+    display: inline-block;
+    background-color: #f4fc27;
+    font-family: Arial, sans-serif ;
+    font-size: 33px;
+    font-weight: 300;
+    color: #000;
+    margin: 0px;
+    padding: 5px 15px 10px;
+    position: relative;
+  }
+  .graduate__title--name {
+
+  }
+  .graduate__title--name::After {
+    content: "";
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    left: 12px;
+  }
+  .graduate__title--program {
+    text-transform: uppercase;
+    padding: 5px 12px 2px;
+  }
+  .graduate__subtitle {
+    border-top: 2px solid #5b5b5b;
+    font-size: 33px;
+    font-weight: bold;
+    font-style: italic;
+    color: #175c96;
+    margin-top: 22px;
+    margin-bottom: 29px;
+  }
+  .text {
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+    font-size: 33px;
+    color: #000;
+    margin: 0px;
+    letter-spacing: 0.4px;
+  }
+  .hors {
+    padding: 5px;
+    background-color: #f4fc27;
+  }
+  .institution {
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 55px;
+    color: #175c96;
+    margin: 0px;
+    margin-top: 66px;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1372px;
+    margin-top: 61px;
+  }
+  .date__wrapper {
+    flex-basis: 410px;
+    flex-shrink: 0;
+    margin-right: 140px;
+  }
+  .date__title {
+    margin: 0px;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 33px;
+    font-weight: 300;
+    text-transform: uppercase;
+    background-color: #f4fc27;
+    padding: 5px 18px 10px 7px;
+    position: relative;
+  }
+  .date__title::After {
+    content: "";
+    height: 3px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 10px;
+    right: 18px;
+    left: 7px;
+  }
+  .date__text {
+    border-top: 2px solid #5b5b5b;
+    font-weight: 300;
+    font-size: 27px;
+    margin: 0px;
+    margin-top: 12px;
+    padding-top: 3px;
+  }
+  .director__wrapper {
+    flex-grow: 1;
+    margin-top: 65px;
+  }
+  .director__text {
+    border-top: 2px solid #5b5b5b;
+    font-size: 28px;
+    line-height: 38px;
+    color: #000;
+    margin: 0px;
+    
+  }
+  .director__text p {
+    display: inline-block;
+    margin: 0px;
+    text-align: left;
+
+  }
+  .number {
+    max-width: 1560px;
+    width: 100%;
+    font-size: 28px;
+    color: #000;
+    text-align: left;
+    margin-top: 36px;
+  }
+</style>
+</html>
